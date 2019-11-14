@@ -36,11 +36,11 @@ Use the static IP option to configure the availability group listener.
 use master;
 set nocount on 
 
-alter availability group [SQLAG1]
+alter availability group [sqlcag]
 add
 	listener 'sqlag1_listener' 
 		(with dhcp on ('10.101.117.0', '255.255.255.0')， port=1433);
-		
+
 go
 ```
 
